@@ -1,0 +1,14 @@
+/anaconda/envs/azureml_py310_sdkv2/lib/python3.10/site-packages/pyserini/eval/trec_eval.py:70: FutureWarning: The 'delim_whitespace' keyword in pd.read_csv is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  run = pd.read_csv(args[-1], delim_whitespace=True, header=None)
+/anaconda/envs/azureml_py310_sdkv2/lib/python3.10/site-packages/pyserini/eval/trec_eval.py:71: FutureWarning: The 'delim_whitespace' keyword in pd.read_csv is deprecated and will be removed in a future version. Use ``sep='\s+'`` instead
+  qrels = pd.read_csv(args[-2], delim_whitespace=True, header=None)
+Downloading https://search.maven.org/remotecontent?filepath=uk/ac/gla/dcs/terrierteam/jtreceval/0.0.5/jtreceval-0.0.5-jar-with-dependencies.jar to /home/student/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar...
+/home/student/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar already exists!
+Skipping download.
+Running command: ['java', '-jar', '/home/student/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar', '-c', '-m', 'ndcg_cut.10', '-m', 'recip_rank', '-m', 'recall.50', '-m', 'map', '-m', 'P.5', 'qrels.dl20-doc.subset.txt', "run.msmarco-doc.dev-subset.set.irs-1000.cln-50.k-2.m-10.sim_mat-T.met-euc.colp-min.l-0.9.emb-['e5'].mq-T.txt"]
+Results:
+map                   	all	0.2563
+recip_rank            	all	0.7251
+P_5                   	all	0.4588
+recall_50             	all	0.5853
+ndcg_cut_10           	all	0.3524
